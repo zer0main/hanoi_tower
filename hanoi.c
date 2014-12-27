@@ -3,8 +3,7 @@
 #define TOWER1 1
 #define TOWER2 3
 
-void hanoi(int a, int n1, int n2)
-{
+void hanoi(int a, int n1, int n2) {
      if (a == 1) {
         printf("%d %d %d\n", a, n1, n2);
      } else {
@@ -21,8 +20,7 @@ void hanoi(int a, int n1, int n2)
     }
 }
 
-int main()
-{
+int main() {
     int n;
     scanf("%d", &n);
     hanoi(n, TOWER1, TOWER2);
