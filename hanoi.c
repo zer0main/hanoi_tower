@@ -4,7 +4,7 @@
 #define TOWER2 3
 
 void hanoi(int a, int n1, int n2) {
-     if (a == 1) {
+     if (a == 1) { // end of recursion
         printf("%d %d %d\n", a, n1, n2);
      } else {
         int x, na;
@@ -14,9 +14,9 @@ void hanoi(int a, int n1, int n2) {
                  break;
              }
         }
-        hanoi(a - 1, n1, na);
+        hanoi(a - 1, n1, na); // recursion
         printf("%d %d %d\n", a, n1, n2);
-        hanoi(a - 1, na, n2);
+        hanoi(a - 1, na, n2); // recursion
     }
 }
 
