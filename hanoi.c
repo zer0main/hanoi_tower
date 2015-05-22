@@ -8,7 +8,7 @@ void hanoi(int a, int n1, int n2) {
         printf("%d %d %d\n", a, n1, n2);
      } else {
         int x, na;
-        for (x = 1; x <= 3; x++) {
+        for (x = TOWER1; x <= TOWER2; x++) {
              if ((x != n1) && (x != n2)) {
                  na = x;
                  break;
