@@ -31,4 +31,3 @@ int main() {
     scanf("%d", &n);
     hanoi(n, TOWER1, TOWER2);
 }
-
